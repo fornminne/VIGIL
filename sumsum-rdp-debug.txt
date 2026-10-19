@@ -1,0 +1,19 @@
+# Nmap 7.992 scan initiated Sun Oct 18 00:37:46 2026 as: nmap -sT -Pn -p3389 --script rdp-enum-encryption --script-trace -d -oN sumsum-rdp-debug.txt 192.168.1.173
+--------------- Timing report ---------------
+  hostgroups: min 1, max 100000
+  rtt-timeouts: init 1000, min 100, max 10000
+  max-scan-delay: TCP 1000, UDP 1000, SCTP 1000
+  parallelism: min 0, max 0
+  max-retries: 10, host-timeout: 0
+  min-rate: 0, max-rate: 0
+---------------------------------------------
+Nmap scan report for 192.168.1.173
+Host is up, received user-set (0.085s latency).
+Scanned at 2026-10-18 00:37:47 EDT for 0s
+
+PORT     STATE SERVICE       REASON
+3389/tcp open  ms-wbt-server syn-ack
+|_rdp-enum-encryption: attempt to call a table value
+
+Read from /data/data/com.termux/files/usr/bin/../share/nmap: nmap-protocols nmap-services.
+# Nmap done at Sun Oct 18 00:37:47 2026 -- 1 IP address (1 host up) scanned in 1.00 seconds

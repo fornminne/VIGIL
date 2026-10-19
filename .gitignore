@@ -1,0 +1,7 @@
+
+# GitHub CLI credentials
+.config/gh/
+**/.config/gh/
+.env
+.env.*
+!.env.example

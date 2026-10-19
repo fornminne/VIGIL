@@ -1,0 +1,37 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.21.1
+2 info using node@v24.18.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/gods_eye/gods_eye/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm ci
+8 verbose argv "ci"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-10-19T00_56_51_420Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-10-19T00_56_51_420Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+14 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+15 silly idealTree buildDeps
+16 verbose stack Error: Unsupported platform
+16 verbose stack     at checkPlatform (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/npm-install-checks/lib/index.js:42:25)
+16 verbose stack     at #checkEngineAndPlatform (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:213:9)
+16 verbose stack     at Arborist.buildIdealTree (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:183:41)
+16 verbose stack     at async CI.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/commands/ci.js:78:5)
+16 verbose stack     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:193:9)
+16 verbose stack     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:67:5)
+17 verbose pkgid @meri-imperiumi/eccodes-wasm@2.48.2
+18 error code EBADPLATFORM
+19 error notsup Unsupported platform for @meri-imperiumi/eccodes-wasm@2.48.2: wanted {"os":"darwin,linux,win32","cpu":"x64,arm64"} (current: {"os":"android","cpu":"arm64"})
+20 error notsup Valid os:   darwin,linux,win32
+20 error notsup Actual os:  android
+20 error notsup Valid cpu:  x64,arm64
+20 error notsup Actual cpu: arm64
+21 verbose cwd /data/data/com.termux/files/home/gods_eye/gods_eye
+22 verbose os Linux 4.19.113-27095354
+23 verbose node v24.18.0
+24 verbose npm  v11.21.1
+25 verbose exit 1
+26 verbose code 1
+27 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2026-10-19T00_56_51_420Z-debug-0.log

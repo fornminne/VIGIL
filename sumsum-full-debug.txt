@@ -1,0 +1,108 @@
+Starting Nmap 7.992 ( https://nmap.org ) at 2026-10-18 00:40 -0400
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nmap-services
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nmap-protocols
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nmap.xsl
+The max # of sockets we are using is: 0
+--------------- Timing report ---------------
+  hostgroups: min 1, max 100000
+  rtt-timeouts: init 1000, min 100, max 10000
+  max-scan-delay: TCP 1000, UDP 1000, SCTP 1000
+  parallelism: min 0, max 0
+  max-retries: 10, host-timeout: 0
+  min-rate: 0, max-rate: 0
+---------------------------------------------
+NSE: Using Lua 5.4.
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nse_main.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/lpeg-utility.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/stdnse.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/strict.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/scripts/script.db
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/tableaux.lua
+NSE: Arguments from CLI: 
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/scripts/rdp-enum-encryption.nse
+NSE: Script rdp-enum-encryption.nse was selected by name.
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/shortport.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/rdp.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/asn1.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/unittest.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/nsedebug.lua
+Fetchfile found /data/data/com.termux/files/usr/bin/../share/nmap/nselib/listop.lua
+NSE: Loaded 1 scripts for scanning.
+NSE: Loaded '/data/data/com.termux/files/usr/bin/../share/nmap/scripts/rdp-enum-encryption.nse'.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 00:40
+Completed NSE at 00:40, 0.00s elapsed
+mass_dns: Using DNS server 8.8.8.8
+mass_dns: Using DNS server 8.8.4.4
+Initiating Parallel DNS resolution of 1 host. at 00:40
+NSOCK INFO [0.1120s] nsock_iod_new2(): nsock_iod_new (IOD #1)
+NSOCK INFO [0.1120s] nsock_connect_udp(): UDP connection requested to 8.8.4.4:53 (IOD #1) EID 8
+NSOCK INFO [0.1120s] nsock_iod_new2(): nsock_iod_new (IOD #2)
+NSOCK INFO [0.1130s] nsock_connect_udp(): UDP connection requested to 8.8.8.8:53 (IOD #2) EID 16
+NSOCK INFO [0.1130s] nsock_trace_handler_callback(): Callback: CONNECT SUCCESS for EID 8 [8.8.4.4:53]
+NSOCK INFO [0.1130s] nsock_read(): Read request from IOD #1 [8.8.4.4:53] (timeout: -1ms) EID 26
+NSOCK INFO [0.1130s] nsock_trace_handler_callback(): Callback: CONNECT SUCCESS for EID 16 [8.8.8.8:53]
+NSOCK INFO [0.1130s] nsock_read(): Read request from IOD #2 [8.8.8.8:53] (timeout: -1ms) EID 34
+NSOCK INFO [0.1130s] nsock_write(): Write request for 44 bytes to IOD #1 EID 43 [8.8.4.4:53]
+NSOCK INFO [0.1130s] nsock_trace_handler_callback(): Callback: WRITE SUCCESS for EID 43 [8.8.4.4:53]
+NSOCK INFO [0.1590s] nsock_trace_handler_callback(): Callback: READ SUCCESS for EID 26 [8.8.4.4:53] (44 bytes): .............173.1.168.192.in-addr.arpa.....
+NSOCK INFO [0.1590s] nsock_read(): Read request from IOD #1 [8.8.4.4:53] (timeout: -1ms) EID 50
+mass_dns: 1/1 [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, SY: 0]
+NSOCK INFO [0.6150s] nsock_iod_delete(): nsock_iod_delete (IOD #1)
+NSOCK INFO [0.6150s] nevent_delete(): nevent_delete on event #50 (type READ)
+NSOCK INFO [0.6150s] nsock_iod_delete(): nsock_iod_delete (IOD #2)
+NSOCK INFO [0.6150s] nevent_delete(): nevent_delete on event #34 (type READ)
+Completed Parallel DNS resolution of 1 host. at 00:40, 0.50s elapsed
+Initiating Connect Scan at 00:40
+Scanning 192.168.1.173 [1 port]
+Discovered open port 3389/tcp on 192.168.1.173
+Changing ping technique for 192.168.1.173 to connect to port 3389
+Changing global ping host to 192.168.1.173.
+Completed Connect Scan at 00:40, 0.01s elapsed (1 total ports)
+Overall sending rates: 69.29 packets / s.
+NSE: Script scanning 192.168.1.173.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 00:40
+NSE: Starting rdp-enum-encryption M:b4000071a581c7b8 against 192.168.1.173:3389.
+NSOCK INFO [0.6320s] nsock_timer_create(): Timer created - 200ms from now.  EID 12
+NSOCK INFO [0.8320s] nsock_trace_handler_callback(): Callback: TIMER SUCCESS for EID 12
+NSOCK INFO [0.8330s] nsock_iod_new2(): nsock_iod_new (IOD #1)
+NSOCK INFO [0.8330s] nsock_connect_tcp(): TCP connection requested to 192.168.1.173:3389 (IOD #1) (timeout: 5000ms) EID 16
+NSOCK INFO [0.8490s] nsock_trace_handler_callback(): Callback: CONNECT SUCCESS for EID 16 [192.168.1.173:3389]
+NSE: TCP 192.168.1.190:41956 > 192.168.1.173:3389 | CONNECT
+NSE: TCP 192.168.1.190:41956 > 192.168.1.173:3389 | 0000   03 00 00 2a 25 e0 00 00  00 00 00 43 6f 6f 6b 69  ...*%......Cooki
+0010   65 3a 20 6d 73 74 73 68  61 73 68 3d 6e 6d 61 70  e:.mstshash=nmap
+0020   0d 0a 01 00 08 00 03 00  00 00                    ..........      
+
+NSOCK INFO [0.8500s] nsock_write(): Write request for 42 bytes to IOD #1 EID 27 [192.168.1.173:3389]
+NSOCK INFO [0.8500s] nsock_trace_handler_callback(): Callback: WRITE SUCCESS for EID 27 [192.168.1.173:3389]
+NSE: TCP 192.168.1.190:41956 > 192.168.1.173:3389 | SEND
+NSOCK INFO [0.8520s] nsock_read(): Read request from IOD #1 [192.168.1.173:3389] (timeout: 5000ms) EID 34
+NSOCK INFO [0.8620s] nsock_trace_handler_callback(): Callback: READ SUCCESS for EID 34 [192.168.1.173:3389] (19 bytes): .........4../......
+NSE: TCP 192.168.1.190:41956 < 192.168.1.173:3389 | 0000   03 00 00 13 0e d0 00 00  12 34 00 02 2f 08 00 02  .........4../...
+0010   00 00 00                                          ...             
+
+NSE: [rdp-enum-encryption M:b4000071a581c7b8 192.168.1.173:3389] RDP: Received ConnectionConfirm response
+NSE: TCP 192.168.1.190:41956 > 192.168.1.173:3389 | CLOSE
+NSOCK INFO [0.8630s] nsock_iod_delete(): nsock_iod_delete (IOD #1)
+NSE: Finished rdp-enum-encryption M:b4000071a581c7b8 against 192.168.1.173:3389.
+Destroying sleep callback.
+NSOCK INFO [0.8630s] nsock_event_cancel(): Event #12 (type TIMER) cancelled
+Completed NSE at 00:40, 0.23s elapsed
+Nmap scan report for 192.168.1.173
+Host is up, received user-set (0.011s latency).
+Scanned at 2026-10-18 00:40:33 EDT for 0s
+
+PORT     STATE SERVICE       REASON
+3389/tcp open  ms-wbt-server syn-ack
+|_rdp-enum-encryption: attempt to call a table value
+Final times for host: srtt: 11101 rttvar: 11101  to: 100000
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 00:40
+Completed NSE at 00:40, 0.00s elapsed
+Read from /data/data/com.termux/files/usr/bin/../share/nmap: nmap-protocols nmap-services.
+Nmap done: 1 IP address (1 host up) scanned in 0.86 seconds
+NSE: max memory allocated 3.696MB

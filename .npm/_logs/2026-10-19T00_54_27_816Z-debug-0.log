@@ -1,0 +1,40 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.21.1
+2 info using node@v24.18.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/gods_eye/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--include" "dev"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-10-19T00_54_27_816Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-10-19T00_54_27_816Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+14 silly idealTree buildDeps
+15 verbose stack Error: Unsupported platform
+15 verbose stack     at checkPlatform (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/npm-install-checks/lib/index.js:42:25)
+15 verbose stack     at #checkEngineAndPlatform (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:213:9)
+15 verbose stack     at Arborist.buildIdealTree (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:183:41)
+15 verbose stack     at async Promise.all (index 1)
+15 verbose stack     at async Arborist.reify (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:118:5)
+15 verbose stack     at async Install.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/commands/install.js:158:5)
+15 verbose stack     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:193:9)
+15 verbose stack     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:67:5)
+16 verbose pkgid @meri-imperiumi/eccodes-wasm@2.48.2
+17 error code EBADPLATFORM
+18 error notsup Unsupported platform for @meri-imperiumi/eccodes-wasm@2.48.2: wanted {"os":"darwin,linux,win32","cpu":"x64,arm64"} (current: {"os":"android","cpu":"arm64"})
+19 error notsup Valid os:   darwin,linux,win32
+19 error notsup Actual os:  android
+19 error notsup Valid cpu:  x64,arm64
+19 error notsup Actual cpu: arm64
+20 silly unfinished npm timer reify 1792371268824
+21 silly unfinished npm timer reify:loadTrees 1792371268825
+22 verbose cwd /data/data/com.termux/files/home/gods_eye
+23 verbose os Linux 4.19.113-27095354
+24 verbose node v24.18.0
+25 verbose npm  v11.21.1
+26 verbose exit 1
+27 verbose code 1
+28 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2026-10-19T00_54_27_816Z-debug-0.log
